@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Muneer | Jr.Full Stack Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../Style/index.css">
+    
+</head>
+<body class="min-h-screen">
+    <!-- Floating background shapes -->
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    
+    <!-- Blurred Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-card py-4 px-6 shadow-lg">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">&lt;SaHiL/&gt;<span class="text-indigo-400">.</span></a>
+            
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="../index.html" class="nav-link active text-white">Home</a>
+                <a href="../index.html" class="nav-link text-gray-300 hover:text-white">Experience</a>
+                <a href="#certifications" class="nav-link text-gray-300 hover:text-white">Certifications</a>
+                <a href="../index.html" class="nav-link text-gray-300 hover:text-white">Projects</a>
+                <a href="../index.html" class="nav-link text-gray-300 hover:text-white">Contact</a>
+                
+                <!-- Theme toggle -->
+                <div id="theme-toggle" class="theme-toggle ml-4">
+                    <i class="fas fa-moon text-white"></i>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <a href="https://github.com" target="_blank" class="text-gray-300 hover:text-white">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="text-gray-300 hover:text-white">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="text-gray-300 hover:text-white">
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden glass-card mt-4 py-4 px-6 rounded-lg">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="text-white">Home</a>
+                <a href="#projects" class="text-gray-300 hover:text-white">Projects</a>
+                <a href="#experience" class="text-gray-300 hover:text-white">Experience</a>
+                <a href="#certifications" class="text-gray-300 hover:text-white">Certifications</a>
+                <a href="#contact" class="text-gray-300 hover:text-white">Contact</a>
+                <div class="pt-2">
+                    <button id="mobile-theme-toggle" class="text-gray-300 hover:text-white">
+                        <i class="fas fa-moon mr-2"></i> Toggle Theme
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+      <!-- Certifications Section -->
+    <section id="certifications" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-2 text-center">Certifications</h2>
+            <p class="text-gray-400 mb-12 text-center max-w-2xl mx-auto">
+                Continuous learning is key to staying ahead in technology
+            </p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Certification 1 -->
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="../images/AI For Everyone.jpg" alt="AI For Everyone" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">AI For Everyone</h3>
+                        <p class="text-gray-300 text-sm mb-4">DeepLearning.AI — Issued Jan 2025</p>
+                        <p class="text-gray-300 mb-4">
+                            Introductory course explaining AI concepts and their impact on society.
+                        </p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/72E7K04SGNKS" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Certification 2 -->
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="../images/Developing AI Applications with Python and Flask.jpg" alt="Developing AI Applications with Python and Flask certificate" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Developing AI Applications with Python and Flask</h3>
+                        <p class="text-gray-300 text-sm mb-4">IBM — Issued Jan 2025</p>
+                        <p class="text-gray-300 mb-4">
+                        </p>
+                            Builds AI-powered web apps using Python, Flask, and Watson services.
+                        </p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/EH2BW45LZD62" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Certification 3 -->
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="../images/Python for Data Science, AI & Development.jpg" alt="Python for Data Science, AI & Development certificate" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2"> Python for Data Science, AI & Development</h3>
+                        <p class="text-gray-300 text-sm mb-4">IBM iX — Issued Jan 2025</p>
+                        <p class="text-gray-300 mb-4">
+                            Covers Python basics and libraries used in data science and AI.
+                        </p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/8GTUSW7ENSCB" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 4 -->
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="../images/Data Science.jpg" alt="Data Science certificate" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Python for Data Science</h3>
+                        <p class="text-gray-300 text-sm mb-4">University of Sindh, Jamshoro  — Issued Jan 2024</p>
+                        <p class="text-gray-300 mb-4">
+                            Advanced React concepts including hooks, context, and performance optimization.
+                        </p>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 5 -->
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="../images/Introduction to HTML, CSS, & JavaScript.jpg" alt="Introduction to HTML, CSS, & JavaScript certificate" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Introduction to HTML, CSS, & JavaScript</h3>
+                        <p class="text-gray-300 text-sm mb-4">IBM — Issued Dec 2024</p>
+                        <p class="text-gray-300 mb-4">
+                            Fundamentals of web development using HTML, CSS, and JavaScript.
+                        </p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/BVAOWGD7TDAZ" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 6 -->
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="../images/Use Canva to Create Desktop and Mobile-friendly.jpg" alt="Use Canva to Create Desktop and Mobile-friendly certificate" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2"> Use Canva to Create Desktop and Mobile-friendly Web Pages</h3>
+                        <p class="text-gray-300 text-sm mb-4">Coursera — Issued Dec 2024</p>
+                        <p class="text-gray-300 mb-4">
+                            Learn to design responsive web pages using Canva's design tools.
+                        </p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/FI365WYPVGES" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 7 -->
+                
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="../images/navtcc.jpg" alt="Mobile Application Development certificate" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Mobile Application Development</h3>
+                        <p class="text-gray-300 text-sm mb-4">NAVTTC — Issued Sep 2023</p>
+                        <p class="text-gray-300 mb-4">
+                            Practical skills for building Android mobile apps using modern tools.
+                        </p>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Certification 8 -->
+                 
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="../images/Introduction to Networking and Storage.jpg" alt="Introduction to Networking and Storage certificate" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2"> Introduction to Networking and Storage</h3>
+                        <p class="text-gray-300 text-sm mb-4">IBM iX — Issued Jan 2025</p>
+                        <p class="text-gray-300 mb-4">
+                           Explains data communication, storage types, and cloud systems.
+                        </p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/J7URP3HN46OJ" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 9 -->
+                
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="../images/Introduction to Cloud Computing.jpg" alt="Introduction to Cloud Computing certificate" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Introduction to Cloud Computing</h3>
+                        <p class="text-gray-300 text-sm mb-4">IBM — Issued Dec 2024</p>
+                        <p class="text-gray-300 mb-4">
+                            Covers essential cloud computing models, services, and platforms.
+                        </p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/IYT3XU8AEO6K" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 10 -->
+                
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E0BAQFqdm1TZ-RZKQ/company-logo_200_200/B4EZgOay6gHEAQ-/0/1752588562343/amazon_web_services_logo?e=1756339200&v=beta&t=pO9WwYIuJrggvxsOwFZ2Ix0KfOB8dw2uCPpdBD_fpZM" alt="Introduction to Information Retrieval with Amazon Q certificate" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2"> Introduction to Information Retrieval with Amazon Q</h3>
+                        <p class="text-gray-300 text-sm mb-4">AWS — Issued Dec 2024</p>
+                        <p class="text-gray-300 mb-4">
+                            Basics of information retrieval using AWS Q services.
+                        </p>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 11 -->               
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="../images/Introduction to Packet Tracer Badge.jpg" alt="Introduction to Cisco Packet Tracer certificate" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Introduction to Cisco Packet Tracer</h3>
+                        <p class="text-gray-300 text-sm mb-4">Cisco Networking Academy — Issued Jun 2024</p>
+                        <p class="text-gray-300 mb-4">
+                            Hands-on networking simulation training using Packet Tracer.
+                        </p>
+                        <a href="https://www.credly.com/badges/99bff9ff-d77b-4dc1-b10a-892e63ec53e1/public_url" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 12 -->
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="../images/Introduction to Materials Science.jpg" alt="Introduction to Materials Science certificate" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Introduction to Materials Science</h3>
+                        <p class="text-gray-300 text-sm mb-4">Arizona State University — Issued Jan 2025</p>
+                        <p class="text-gray-300 mb-4">
+                            Fundamentals of material properties and applications in engineering.
+                        </p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/883IH3FTHRSW" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 13 -->                
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="../images/CPS Design with ARM Core using MicroPython for Industries.jpg" alt="CPS Design with ARM Core using MicroPython for Industries certificate" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">CPS Design with ARM Core using MicroPython for Industries</h3>
+                        <p class="text-gray-300 text-sm mb-4">L&T EduTech — Issued Dec 2024</p>
+                        <p class="text-gray-300 mb-4">
+                            Focuses on MicroPython programming for industrial CPS systems.
+                        </p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/6V4P1TRNCXQR" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 14 -->                
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="../images/Mastering Statics.jpg" alt="Mastering Statics certificate" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Mastering Statics</h3>
+                        <p class="text-gray-300 text-sm mb-4">The Hong Kong University of Science and Technology — Issued Dec 2024</p>
+                        <p class="text-gray-300 mb-4">
+                            Covers equilibrium, forces, and structural analysis in engineering.
+                        </p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/6TUQV7RQZVFE" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 15 -->
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="../images/The Construction Management Industry and Profession.jpg" alt="The Construction Management Industry and Profession certificate" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">The Construction Management Industry and Profession</h3>
+                        <p class="text-gray-300 text-sm mb-4">University of Maryland — Issued Dec 2024</p>
+                        <p class="text-gray-300 mb-4">
+                            Explains roles, phases, and systems used in construction management.
+                        </p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/5FI4790H21DB" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 16 -->
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="../images/English for Science, Technology, Engineering, and Mathematics.jpg" alt="English for Science, Technology, Engineering, and Mathematics certificate" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">English for Science, Technology, Engineering, and Mathematics</h3>
+                        <p class="text-gray-300 text-sm mb-4">University of Pennsylvania — Issued Jan 2025</p>
+                        <p class="text-gray-300 mb-4">
+                            Improves academic English skills in STEM contexts.
+                        </p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/82QE8TGE1HVS" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 17 -->
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="../images/Introduction to Software Engineering.jpg" alt="Introduction to Software Engineering certificate" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Introduction to Software Engineering</h3>
+                        <p class="text-gray-300 text-sm mb-4">IBM — Issued Dec 2024</p>
+                        <p class="text-gray-300 mb-4">
+                            Introduces software development life cycle and methodologies.
+                        </p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/UJRU30H5KPSE" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 18 -->
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="../images/DSTP_Certificate_Freelancing.jpg" alt="Freelancing certificate" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Freelancing</h3>
+                        <p class="text-gray-300 text-sm mb-4">DigiSkills.pk — Issued Jul 2024</p>
+                        <p class="text-gray-300 mb-4">
+                            Practical training on freelancing platforms and client management.
+                        </p>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Certification 19 -->
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="../images/DSTP_Certificate_SEO.jpg" alt="SEO (Search Engine Optimization) certificate" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">SEO (Search Engine Optimization)</h3>
+                        <p class="text-gray-300 text-sm mb-4">DigiSkills.pk — Issued Jul 2024</p>
+                        <p class="text-gray-300 mb-4">
+                            Covers search ranking, on-page, and off-page SEO strategies.
+                        </p>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 20 -->
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="../images/calligarphy.jpg" alt="React Certified" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Calligraphy</h3>
+                        <p class="text-gray-300 text-sm mb-4">School Education Dept. Sindh — Issued Aug 2017</p>
+                        <p class="text-gray-300 mb-4">
+                            Awarded for excellence in calligraphy, showcasing artistic skills.
+                        </p>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+<!-- 
+                
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="https://images.credly.com/images/621a7a84-3b9a-444e-9e0c-7b6456fda7b8/image.png" alt="React Certified" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">React Certified Developer</h3>
+                        <p class="text-gray-300 text-sm mb-4">React Training • 2020</p>
+                        <p class="text-gray-300 mb-4">
+                            Advanced React concepts including hooks, context, and performance optimization.
+                        </p>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="https://images.credly.com/images/621a7a84-3b9a-444e-9e0c-7b6456fda7b8/image.png" alt="React Certified" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">React Certified Developer</h3>
+                        <p class="text-gray-300 text-sm mb-4">React Training • 2020</p>
+                        <p class="text-gray-300 mb-4">
+                            Advanced React concepts including hooks, context, and performance optimization.
+                        </p>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                
+                <div class="certification-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center p-6">
+                        <img src="https://images.credly.com/images/621a7a84-3b9a-444e-9e0c-7b6456fda7b8/image.png" alt="React Certified" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">React Certified Developer</h3>
+                        <p class="text-gray-300 text-sm mb-4">React Training • 2020</p>
+                        <p class="text-gray-300 mb-4">
+                            Advanced React concepts including hooks, context, and performance optimization.
+                        </p>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+ -->
+
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-2 text-center">Let's Connect</h2>
+            <p class="text-gray-400 mb-12 text-center max-w-2xl mx-auto">
+                Have a project in mind or want to discuss potential opportunities? I'd love to hear from you.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="glass-card rounded-xl p-8 h-full">
+                    <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-indigo-600/20 p-3 rounded-lg mr-4">
+                                <i class="fas fa-envelope text-indigo-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-300">Email</h4>
+                                <a href="mailto:alex@example.com" class="text-indigo-400 hover:text-indigo-300">sahilmuneersariyo@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-indigo-600/20 p-3 rounded-lg mr-4">
+                                <i class="fas fa-phone-alt text-indigo-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-300">Phone</h4>
+                                <a href="tel:+1234567890" class="text-indigo-400 hover:text-indigo-300"> 03072515985 | 03319030205 </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-indigo-600/20 p-3 rounded-lg mr-4">
+                                <i class="fas fa-map-marker-alt text-indigo-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-300">Location</h4>
+                                <p class="text-indigo-400">Karāchi, Sindh, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12">
+                        <h4 class="font-medium text-gray-300 mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-slate-800 hover:bg-slate-700 w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:text-white">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="bg-slate-800 hover:bg-slate-700 w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:text-white">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="bg-slate-800 hover:bg-slate-700 w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:text-white">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="bg-slate-800 hover:bg-slate-700 w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:text-white">
+                                <i class="fab fa-stack-overflow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-xl p-8">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-300 mb-2">Name</label>
+                            <input type="text" id="name" name="name" 
+                                   class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                                   placeholder="Your name" required>
+                            <p id="name-error" class="text-red-400 text-sm mt-1 hidden"></p>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-300 mb-2">Email</label>
+                            <input type="email" id="email" name="email" 
+                                   class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                                   placeholder="your.email@example.com" required>
+                            <p id="email-error" class="text-red-400 text-sm mt-1 hidden"></p>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-300 mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" 
+                                   class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                                   placeholder="What's this about?" required>
+                            <p id="subject-error" class="text-red-400 text-sm mt-1 hidden"></p>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-300 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5"
+                                      class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                                      placeholder="Your message here..." required></textarea>
+                            <p id="message-error" class="text-red-400 text-sm mt-1 hidden"></p>
+                        </div>
+                        <button type="submit" 
+                                class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300 w-full flex items-center justify-center">
+                            <i class="fas fa-paper-plane mr-2"></i> Send Message
+                        </button>
+                    </form>
+                    
+                    <div id="success-message" class="hidden mt-6 p-4 bg-green-900/50 text-green-300 rounded-lg">
+                        <i class="fas fa-check-circle mr-2"></i> Your message has been sent successfully! I'll get back to you soon.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-slate-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <a href="#" class="text-2xl font-bold text-white">Sahil<span class="text-indigo-400">.</span></a>
+                    <p class="text-gray-400 mt-4">
+                        Building innovative digital solutions that drive business growth and user satisfaction.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-white">Projects</a></li>
+                        <li><a href="#experience" class="text-gray-400 hover:text-white">Experience</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Web Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">App Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">UI/UX Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <button id="footer-theme-toggle" class="text-gray-400 hover:text-white flex items-center">
+                            <i class="fas fa-moon mr-2"></i> Toggle Theme
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2025 Sahil Muneer. All rights reserved. | 
+                    <a href="#" class="hover:text-white">Privacy Policy</a> | 
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+        const footerThemeToggle = document.getElementById('footer-theme-toggle');
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        
+        // Check for saved theme preference or use system preference
+        const currentTheme = localStorage.getItem('theme') || 
+                            (prefersDarkScheme.matches ? 'dark' : 'light');
+        
+        if (currentTheme === 'light') {
+            document.body.classList.add('light-mode');
+            themeToggle.innerHTML = '<i class="fas fa-sun text-yellow-500"></i>';
+            mobileThemeToggle.innerHTML = '<i class="fas fa-sun mr-2 text-yellow-500"></i> Light Mode';
+            footerThemeToggle.innerHTML = '<i class="fas fa-sun mr-2 text-yellow-500"></i> Light Mode';
+        }
+        
+        // Toggle theme
+        function toggleTheme() {
+            if (document.body.classList.contains('light-mode')) {
+                document.body.classList.remove('light-mode');
+                localStorage.setItem('theme', 'dark');
+                themeToggle.innerHTML = '<i class="fas fa-moon text-white"></i>';
+                mobileThemeToggle.innerHTML = '<i class="fas fa-moon mr-2"></i> Dark Mode';
+                footerThemeToggle.innerHTML = '<i class="fas fa-moon mr-2"></i> Dark Mode';
+            } else {
+                document.body.classList.add('light-mode');
+                localStorage.setItem('theme', 'light');
+                themeToggle.innerHTML = '<i class="fas fa-sun text-yellow-500"></i>';
+                mobileThemeToggle.innerHTML = '<i class="fas fa-sun mr-2 text-yellow-500"></i> Light Mode';
+                footerThemeToggle.innerHTML = '<i class="fas fa-sun mr-2 text-yellow-500"></i> Light Mode';
+            }
+        }
+        
+        themeToggle.addEventListener('click', toggleTheme);
+        mobileThemeToggle.addEventListener('click', toggleTheme);
+        footerThemeToggle.addEventListener('click', toggleTheme);
+        
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // Highlight active nav link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= sectionTop - 300) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active', 'text-white');
+                link.classList.add('text-gray-300');
+                
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active', 'text-white');
+                    link.classList.remove('text-gray-300');
+                }
+            });
+        });
+        
+        // Contact form validation
+        const contactForm = document.getElementById('contact-form');
+        const successMessage = document.getElementById('success-message');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Reset errors
+            document.querySelectorAll('[id$="-error"]').forEach(el => {
+                el.classList.add('hidden');
+            });
+            
+            // Validate form
+            let isValid = true;
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+            const subject = document.getElementById('subject');
+            const message = document.getElementById('message');
+            
+            if (name.value.trim() === '') {
+                document.getElementById('name-error').textContent = 'Name is required';
+                document.getElementById('name-error').classList.remove('hidden');
+                isValid = false;
+            }
+            
+            if (email.value.trim() === '') {
+                document.getElementById('email-error').textContent = 'Email is required';
+                document.getElementById('email-error').classList.remove('hidden');
+                isValid = false;
+            } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+                document.getElementById('email-error').textContent = 'Please enter a valid email';
+                document.getElementById('email-error').classList.remove('hidden');
+                isValid = false;
+            }
+            
+            if (subject.value.trim() === '') {
+                document.getElementById('subject-error').textContent = 'Subject is required';
+                document.getElementById('subject-error').classList.remove('hidden');
+                isValid = false;
+            }
+            
+            if (message.value.trim() === '') {
+                document.getElementById('message-error').textContent = 'Message is required';
+                document.getElementById('message-error').classList.remove('hidden');
+                isValid = false;
+            }
+            
+            if (isValid) {
+                // In a real application, you would send the form data to a server here
+                // For this example, we'll just show a success message
+                contactForm.reset();
+                successMessage.classList.remove('hidden');
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.classList.add('hidden');
+                }, 5000);
+            }
+        });
+        
+        // Animation on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.project-card, .certification-card, .timeline-item');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+        
+        // Set initial state for animation
+        document.querySelectorAll('.project-card, .certification-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        });
+        
+        document.querySelectorAll('.timeline-item').forEach((el, index) => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateX(-20px)';
+            el.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
+        });
+        
+        window.addEventListener('load', animateOnScroll);
+        window.addEventListener('scroll', animateOnScroll);
+    </script>
+</body>
+</html>
