@@ -148,7 +148,7 @@ body.light-mode {
 
 .light-mode .theme-toggle:hover {
     background: rgba(79, 70, 229, 0.1);
-}
+} 
 
 .floating-shape {
     position: absolute;
