@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Muneer | Jr Software Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../Style/index.css">
+    
+</head>
+<body class="min-h-screen">
+    <!-- Floating background shapes -->
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    
+    <!-- Blurred Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-card py-4 px-6 shadow-lg">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            
+            <a href="index.html" 
+            class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+            &lt;Sahil/&gt;<span class="text-pink-500">.</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="../index.html" class="nav-link active text-white">Home</a>
+                <a href="../index.html" class="nav-link text-gray-300 hover:text-white">Experience</a>
+                <a href="#certifications" class="nav-link text-gray-300 hover:text-white">Certifications</a>
+                <a href="../index.html" class="nav-link text-gray-300 hover:text-white">Projects</a>
+                <a href="#testimonials" class="nav-link text-gray-300 hover:text-white">Testimonial</a>
+                <a href="../index.html" class="nav-link text-gray-300 hover:text-white">Contact</a>
+                
+                <!-- Theme toggle -->
+                <!-- <div id="theme-toggle" class="theme-toggle ml-4">
+                    <i class="fas fa-moon text-white"></i>
+                </div>
+            </div> -->
+            
+            <div class="flex items-center space-x-4">
+                <a href="https://github.com/Sahil-Muneer-Sario" target="_blank" class="text-gray-300 hover:text-white">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sahil-muneer-sario-064b12241" target="_blank" class="text-gray-300 hover:text-white">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="mailto:sahilmuneersariyo@gmail.com" class="text-gray-300 hover:text-white">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+                <a href="https://www.instagram.com/sahil_munir_sario/" target="_blank" class="text-gray-300 hover:text-white">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden glass-card mt-4 py-4 px-6 rounded-lg">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="text-white">Home</a>
+                <a href="#projects" class="text-gray-300 hover:text-white">Projects</a>
+                <a href="#experience" class="text-gray-300 hover:text-white">Experience</a>
+                <a href="#certifications" class="text-gray-300 hover:text-white">Certifications</a>
+                <a href="#testimonials" class="nav-link text-gray-300 hover:text-white">Testimonial</a>
+                <a href="#contact" class="text-gray-300 hover:text-white">Contact</a>
+                <div class="pt-2">
+                    <button id="mobile-theme-toggle" class="text-gray-300 hover:text-white">
+                        <i class="fas fa-moon mr-2"></i> Toggle Theme
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+      <!-- Certifications Section -->
+       <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-2 text-center">Featured Projects</h2>
+            <p class="text-gray-400 mb-12 text-center max-w-2xl mx-auto">
+                A selection of my most significant and challenging projects
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+            <!-- Project 1: Medicine Recommendation System -->
+            <div class="project-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+            <div class="h-64 bg-gradient-to-r from-green-500 to-teal-600 flex items-center justify-center relative overflow-hidden">
+                    <img src="../images/Medicine Recommendation System.jpg" alt="Medicine Recommendation System">
+                </div>
+                <div class="p-6">
+                        <div class="relative z-10 p-6 text-center">
+                        <span class="inline-block bg-white/10 backdrop-blur-sm text-gray px-3 py-1 rounded-full text-sm mb-4">AI-Powered Healthcare</span>
+                        <!-- <h3 class="text-2xl font-bold text-white">Medicine Recommendation System <br> AI-Powered Healthcare Solution</h3> -->
+                        <h3 class="text-2xl font-bold text-gray">Medicine Recommendation System <br> AI-Powered Healthcare Solution</h3>
+                        <p class="text-gray text-sm mt-2">Aug 2024 - Nov 2024 | Associated with IMCS</p>
+                    </div>
+                    <p class="text-gray-300 mb-6">
+                        As the Head of the Medicine Recommendation System Project 2024, I led the development of an AI-powered platform 
+                        designed to assist users in finding suitable medicines based on symptoms and health conditions. 
+                        The system leverages machine learning algorithms and a structured medical dataset to provide 
+                        accurate, personalized recommendations. Our mission was to enhance healthcare accessibility 
+                        by integrating AI-driven insights into a user-friendly interface.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">Python (Flask)</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">scikit-learn</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">Pandas</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">NumPy</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">Pickle</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">MySQL</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">API Integration</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">HTML5</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">CSS</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <a href="#" class="text-green-400 hover:text-green-300 flex items-center">
+                                <i class="fas fa-external-link-alt mr-2"></i> Live Demo (coming soon)
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-gray-400 hover:text-gray-300 flex items-center">
+                                <i class="fab fa-github mr-2"></i> Case Study (coming soon)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2: Pollution & Environment Analysis -->
+            <div class="project-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                <div class="h-64 bg-gradient-to-r from-green-500 to-teal-600 flex items-center justify-center relative overflow-hidden">
+                    <img src="../images/Pollution & Environment Analysis.png" alt="Pollution Project">
+                </div>
+                <div class="p-6">
+                        <div class="relative z-10 p-6 text-center">
+                        <span class="inline-block bg-white/10 backdrop-blur-sm text-gray px-3 py-1 rounded-full text-sm mb-4">Data Science</span>
+                        <h3 class="text-2xl font-bold text-gray">Pollution and Its Impact on the Environment</h3>
+                        <p class="text-gray text-sm mt-2">Apr 2024 - Jun 2024 | Associated with IMCS</p>
+                    </div>
+                    <p class="text-gray-300 mb-6">
+                        As Presenter & Data Analyst, I worked on analyzing environmental datasets to uncover trends in pollution levels 
+                        and their long-term effects on sustainability. The project focused on visualizing key insights 
+                        through charts and reports, identifying patterns in air and water pollution, and proposing 
+                        actionable, data-driven solutions for a cleaner and healthier environment.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">Python</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">Matplotlib</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">Pandas</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">NumPy</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">Data Visualization</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">Analytics</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <a href="#" class="text-green-400 hover:text-green-300 flex items-center">
+                                <i class="fas fa-external-link-alt mr-2"></i> Presentation (coming soon)
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-gray-400 hover:text-gray-300 flex items-center">
+                                <i class="fab fa-github mr-2"></i> Case Study (coming soon)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                <div class="h-64 bg-gradient-to-r from-green-500 to-emerald-600 flex items-center justify-center relative overflow-hidden">
+                    <img src="../images/fyp.png" alt="Project 3">
+                </div>
+                <div class="p-6">
+                    <div class="relative z-10 p-6 text-center">
+                        <span class="inline-block bg-white/10 backdrop-blur-sm text-gray px-3 py-1 rounded-full text-sm mb-4">UI/UX & Frontend</span>
+                        <h3 class="text-2xl font-bold text-gray">Skin Diseases Recognition & Diagnosis System <br>(FYP 2025)</h3>
+                    </div>
+                    <p class="text-gray-300 mb-6">
+                        As the UI/UX Frontend Designer for our Final Year Project (FYP 2025), I designed and implemented a 
+                        usser-friendly interface for the <strong>Skin Diseases Recognition & Diagnosis System</strong>. 
+                        The project integrates AI-based skin disease detection with a responsive, intuitive design that ensures 
+                        accessibility and seamless user experience for patients and healthcare providers.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">Figma</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">Adobe XD</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">HTML5</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">CSS3</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <a href="#" class="text-green-400 hover:text-green-300 flex items-center">
+                                <i class="fas fa-external-link-alt mr-2"></i> Live Demo (coming soon)
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-gray-400 hover:text-gray-300 flex items-center">
+                                <i class="fab fa-github mr-2"></i> Case Study (coming soon)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Project 3 -->
+            <div class="project-card glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                <div class="h-64 bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center relative overflow-hidden">
+                    <img src="../images/hostel.png" alt="Hostel Management System">
+                </div>
+                <div class="p-6">
+                    <div class="relative z-10 p-6 text-center">
+                        <span class="inline-block bg-white/10 backdrop-blur-sm text-gray px-3 py-1 rounded-full text-sm mb-4">
+                            Full-Stack Development
+                        </span>
+                        <h3 class="text-2xl font-bold text-gray">
+                            Hostel Management System <br>(Paid Project)
+                        </h3>
+                    </div>
+                    <p class="text-gray-300 mb-6">
+                        As a Full-Stack Developer, I designed and developed a complete 
+                        <strong>Hostel Management System</strong> for a private client to automate student accommodation processes. 
+                        The system efficiently handles room allocation, fee management, and student record tracking 
+                        through separate dashboards for administrators, wardens, and students. 
+                        It delivers a responsive, secure, and user-friendly experience that simplifies hostel operations and data management.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">HTML5</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">CSS3</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">Bootstrap</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">PHP (Laravel)</span>
+                        <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm">MySQL</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                                <i class="fas fa-external-link-alt mr-2"></i> Live Demo (coming soon)
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-gray-400 hover:text-gray-300 flex items-center">
+                                <i class="fab fa-github mr-2"></i> Case Study (coming soon)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    
+<!-- Contact Section -->
+        <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-center">Let's Connect</h2>
+            <p class="text-gray-400 mb-10 text-center max-w-2xl mx-auto">
+            Have a project in mind or want to discuss potential opportunities? I'd love to hear from you.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Left Card -->
+            <div class="glass-card rounded-xl p-6 sm:p-8 h-full">
+                <h3 class="text-xl sm:text-2xl font-semibold mb-6">Contact Information</h3>
+
+                <div class="space-y-6">
+                <!-- Email -->
+                <div class="flex items-start">
+                    <div class="bg-indigo-600/20 p-3 rounded-lg mr-4">
+                    <i class="fas fa-envelope text-indigo-400"></i>
+                    </div>
+                    <div>
+                    <h4 class="font-medium text-gray-300">Email</h4>
+                    <a href="mailto:sahilmuneersariyo@gmail.com" class="text-indigo-400 hover:text-indigo-300 break-all">
+                        sahilmuneersariyo@gmail.com
+                    </a>
+                    </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="flex items-start">
+                    <div class="bg-indigo-600/20 p-3 rounded-lg mr-4">
+                    <i class="fas fa-phone-alt text-indigo-400"></i>
+                    </div>
+                    <div>
+                    <h4 class="font-medium text-gray-300">Phone</h4>
+                    <a href="tel:+923072515985" class="text-indigo-400 hover:text-indigo-300 block">0307 2515985</a>
+                    <a href="tel:+923319030205" class="text-indigo-400 hover:text-indigo-300 block">0331 9030205</a>
+                    </div>
+                </div>
+
+                <!-- Location -->
+                <div class="flex items-start">
+                    <div class="bg-indigo-600/20 p-3 rounded-lg mr-4">
+                    <i class="fas fa-map-marker-alt text-indigo-400"></i>
+                    </div>
+                    <div>
+                    <h4 class="font-medium text-gray-300">Location</h4>
+                    <p class="text-indigo-400">Karāchi, Sindh, Pakistan</p>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="mt-10">
+                <h4 class="font-medium text-gray-300 mb-4">Follow Me</h4>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://github.com/Sahil-Muneer-Sario" target="_blank" class="text-gray-300 hover:text-white text-2xl">
+                    <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sahil-muneer-sario-064b12241" target="_blank" class="text-gray-300 hover:text-white text-2xl">
+                    <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:sahilmuneersariyo@gmail.com" class="text-gray-300 hover:text-white text-2xl">
+                    <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.instagram.com/sahil_munir_sario/" target="_blank" class="text-gray-300 hover:text-white text-2xl">
+                    <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <!-- Right Card (Form) -->
+            <div class="glass-card rounded-xl p-6 sm:p-8">
+                <form id="contact-form" class="space-y-6">
+                <!-- Name -->
+                <div>
+                    <label for="name" class="block text-gray-300 mb-2">Name</label>
+                    <input type="text" id="name" name="name" 
+                        class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                        placeholder="Your name" required>
+                    <p id="name-error" class="text-red-400 text-sm mt-1 hidden"></p>
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email" class="block text-gray-300 mb-2">Email</label>
+                    <input type="email" id="email" name="email" 
+                        class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                        placeholder="your.email@example.com" required>
+                    <p id="email-error" class="text-red-400 text-sm mt-1 hidden"></p>
+                </div>
+
+                <!-- Subject -->
+                <div>
+                    <label for="subject" class="block text-gray-300 mb-2">Subject</label>
+                    <input type="text" id="subject" name="subject" 
+                        class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                        placeholder="What's this about?" required>
+                    <p id="subject-error" class="text-red-400 text-sm mt-1 hidden"></p>
+                </div>
+
+                <!-- Message -->
+                <div>
+                    <label for="message" class="block text-gray-300 mb-2">Message</label>
+                    <textarea id="message" name="message" rows="5"
+                            class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                            placeholder="Your message here..." required></textarea>
+                    <p id="message-error" class="text-red-400 text-sm mt-1 hidden"></p>
+                </div>
+
+                <!-- Button -->
+                <button type="submit" 
+                        class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300 w-full flex items-center justify-center">
+                    <i class="fas fa-paper-plane mr-2"></i> Send Message
+                </button>
+                </form>
+
+                <div id="success-message" class="hidden mt-6 p-4 bg-green-900/50 text-green-300 rounded-lg">
+                <i class="fas fa-check-circle mr-2"></i> Your message has been sent successfully! I'll get back to you soon.
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-slate-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <!-- <a href="#" class="text-2xl font-bold text-white">Sahil<span class="text-indigo-400">.</span></a> -->
+                <a href="index.html" 
+                class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+                &lt;Sahil/&gt;<span class="text-pink-500">.</span>
+                </a>
+                    <p class="text-gray-400 mt-4">
+                        Building innovative digital solutions that drive business growth and user satisfaction.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-white">Projects</a></li>
+                        <li><a href="#experience" class="text-gray-400 hover:text-white">Experience</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Web Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">App Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">UI/UX Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+
+                            <a href="https://github.com/Sahil-Muneer-Sario" target="_blank" class="text-gray-300 hover:text-white">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sahil-muneer-sario-064b12241" target="_blank" class="text-gray-300 hover:text-white">
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </a>
+                            <a href="mailto:sahilmuneersariyo@gmail.com" class="text-gray-300 hover:text-white">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/sahil_munir_sario/" target="_blank" class="text-gray-300 hover:text-white">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+
+                    </div>
+                    
+                    <div class="mt-6">
+                        <button id="footer-theme-toggle" class="text-gray-400 hover:text-white flex items-center">
+                            <i class="fas fa-moon mr-2"></i> Toggle Theme
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2025 Sahil Muneer. All rights reserved. | 
+                    <a href="#" class="hover:text-white">Privacy Policy</a> | 
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+        const footerThemeToggle = document.getElementById('footer-theme-toggle');
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        
+        // Check for saved theme preference or use system preference
+        const currentTheme = localStorage.getItem('theme') || 
+                            (prefersDarkScheme.matches ? 'dark' : 'light');
+        
+        if (currentTheme === 'light') {
+            document.body.classList.add('light-mode');
+            themeToggle.innerHTML = '<i class="fas fa-sun text-yellow-500"></i>';
+            mobileThemeToggle.innerHTML = '<i class="fas fa-sun mr-2 text-yellow-500"></i> Light Mode';
+            footerThemeToggle.innerHTML = '<i class="fas fa-sun mr-2 text-yellow-500"></i> Light Mode';
+        }
+        
+        // Toggle theme
+        function toggleTheme() {
+            if (document.body.classList.contains('light-mode')) {
+                document.body.classList.remove('light-mode');
+                localStorage.setItem('theme', 'dark');
+                themeToggle.innerHTML = '<i class="fas fa-moon text-white"></i>';
+                mobileThemeToggle.innerHTML = '<i class="fas fa-moon mr-2"></i> Dark Mode';
+                footerThemeToggle.innerHTML = '<i class="fas fa-moon mr-2"></i> Dark Mode';
+            } else {
+                document.body.classList.add('light-mode');
+                localStorage.setItem('theme', 'light');
+                themeToggle.innerHTML = '<i class="fas fa-sun text-yellow-500"></i>';
+                mobileThemeToggle.innerHTML = '<i class="fas fa-sun mr-2 text-yellow-500"></i> Light Mode';
+                footerThemeToggle.innerHTML = '<i class="fas fa-sun mr-2 text-yellow-500"></i> Light Mode';
+            }
+        }
+        
+        themeToggle.addEventListener('click', toggleTheme);
+        mobileThemeToggle.addEventListener('click', toggleTheme);
+        footerThemeToggle.addEventListener('click', toggleTheme);
+        
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // Highlight active nav link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= sectionTop - 300) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active', 'text-white');
+                link.classList.add('text-gray-300');
+                
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active', 'text-white');
+                    link.classList.remove('text-gray-300');
+                }
+            });
+        });
+        
+        // Contact form validation
+        const contactForm = document.getElementById('contact-form');
+        const successMessage = document.getElementById('success-message');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Reset errors
+            document.querySelectorAll('[id$="-error"]').forEach(el => {
+                el.classList.add('hidden');
+            });
+            
+            // Validate form
+            let isValid = true;
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+            const subject = document.getElementById('subject');
+            const message = document.getElementById('message');
+            
+            if (name.value.trim() === '') {
+                document.getElementById('name-error').textContent = 'Name is required';
+                document.getElementById('name-error').classList.remove('hidden');
+                isValid = false;
+            }
+            
+            if (email.value.trim() === '') {
+                document.getElementById('email-error').textContent = 'Email is required';
+                document.getElementById('email-error').classList.remove('hidden');
+                isValid = false;
+            } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+                document.getElementById('email-error').textContent = 'Please enter a valid email';
+                document.getElementById('email-error').classList.remove('hidden');
+                isValid = false;
+            }
+            
+            if (subject.value.trim() === '') {
+                document.getElementById('subject-error').textContent = 'Subject is required';
+                document.getElementById('subject-error').classList.remove('hidden');
+                isValid = false;
+            }
+            
+            if (message.value.trim() === '') {
+                document.getElementById('message-error').textContent = 'Message is required';
+                document.getElementById('message-error').classList.remove('hidden');
+                isValid = false;
+            }
+            
+            if (isValid) {
+                // In a real application, you would send the form data to a server here
+                // For this example, we'll just show a success message
+                contactForm.reset();
+                successMessage.classList.remove('hidden');
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.classList.add('hidden');
+                }, 5000);
+            }
+        });
+        
+        // Animation on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.project-card, .certification-card, .timeline-item');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+        
+        // Set initial state for animation
+        document.querySelectorAll('.project-card, .certification-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        });
+        
+        document.querySelectorAll('.timeline-item').forEach((el, index) => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateX(-20px)';
+            el.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
+        });
+        
+        window.addEventListener('load', animateOnScroll);
+        window.addEventListener('scroll', animateOnScroll);
+    </script>
+</body>
+</html>
